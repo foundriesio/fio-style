@@ -1,0 +1,23 @@
+extends: substitution
+message: "Use '%s' or similar instead of '%s'"
+level: error
+ignorecase: true
+scope: text
+# `link` gives the source for this rule.
+link: 'https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Names'
+swap:
+  as everyone knows: as many may know
+  blacklist: block
+  blind: unaware
+  blindly: without awareness
+  he: they
+  he/she: they
+  he or she: they
+  lame: disappointing
+  obviously: granted
+  'off the (?:re\w+)': out of control
+  she: they
+  s/he: they
+  she/he: they
+  she or he: they
+  whitelist: allow
