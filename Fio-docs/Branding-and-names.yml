@@ -1,0 +1,34 @@
+# Checks branding for capitialization and spacing issues.
+extends: substitution
+message: Use '%s' instead of '%s'
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Names-and-Branding
+level: error
+ignorecase: false
+# The array is 'observed: expected' pairs
+swap:
+# Regex that meets the expected value are automatically excluded. Whether or not
+# this good practice is a debate for when time is plentiful.
+  LMP: LmP
+  '(?i:L)+mp': LmP
+  linux: Linux
+  Linuxmicroplatform: Linux microPlatform
+  '(?i:microplatform)': microPlatform
+  'docker(?!i: desktop | hub | container)': Docker
+  #'(?i:F)+oundries+(?!re:.io)': Foundries.io
+  '(?i:foundriesio)': Foundries.io
+  foundries.io: Foundries.io
+  '(?i:github)': GitHub
+  '(?i:Open Embedded|openembedded)': OpenEmbedded
+  '(?i:yocto project|yocto-project)': Yocto Project
+  dockerfile: Dockerfile
+  '(?i:docker desktop|docker-desktop)': Docker Desktop
+  '(?i:docker hub|docker-hub)': Docker Hub
+  '(?i:foundriesfactory|foundries factory)': FoundriesFactory
+  '(?i:docker container|docker-container)': Docker container
+  # If working properly, inline literals and code blocks should be excluded.
+  fioctl: Fioctl
+  arduino: Arduino
+  nxp: NXP
+  'aktualizr(?:-| )lite': aktualizr-lite
+  exceptions:
+    '?:+.py'
