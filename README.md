@@ -1,6 +1,12 @@
 # Foundries.io Style Guide
 
-This repository contains Foundries.io [Vale](https://github.com/errata-ai/vale) compatible style guide.
+This repository contains an implementation of the Foundries.io style guide.
+It is compatible with the [Vale](https://github.com/errata-ai/vale)([LICENSE](https://github.com/errata-ai/vale/blob/v2/LICENSE)) linter.
+
+Installing from releases will also pull in additional style guides:
+
+* [write-good](https://github.com/errata-ai/write-good); general good practices for writing in English
+* [alex](https://github.com/errata-ai/alex); checks for insensitive or inappropriate language
 
 ## Overview
 
@@ -19,4 +25,4 @@ directory, and then in the users home directory.
 * [Installing Vale](https://vale.sh/docs/vale-cli/installation/)
 * [Setting up and Configuring Vale](https://vale.sh/docs/vale-cli/structure/)
 
-Vale can be integrated with most editors, as well as the chrome browser.
+Vale can be integrated with most editors.
