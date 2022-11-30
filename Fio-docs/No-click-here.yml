@@ -1,0 +1,7 @@
+extends: existence
+message: Do not use "click here"
+level: error
+ignorecase: true
+scope: link
+tokens:
+  - here  
