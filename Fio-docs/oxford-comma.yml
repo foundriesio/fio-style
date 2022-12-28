@@ -1,0 +1,10 @@
+# Inspired by example provided in vale documentation, with modifed message, level, and addition
+# to regex token
+extends: existence
+message: "Use the Oxford comma in '%s'."
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Commas
+scope: sentence
+level: warning
+nonword: true
+tokens:
+  - '(?:[^\s,]+,){1,} \w+ (?:and|or|nor) \w+[.?!]'
