@@ -1,0 +1,17 @@
+# Rule for em dash: —
+# The em dash is used within a sentence for emphasis in place of other punctation
+# hypen ( - ) and en dash ( – ) should not be used.
+
+extends: existence
+message: "Did you mean to you use an em dash '—'?"
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Dashes-and-Hyphens
+  #nonword: true
+level: warning
+tokens:
+# Note, while some instances, such as spaces around a hypen, will trigger a warning errounously,
+# the assumption is that in most of these tokens, an em dash is generally what is desired.
+# This is why the rule is set to a warning rather than an error. 
+  - '\b[-–—]\s'
+  - '\s[-–—]\b'
+# excluding en dash, as this may occur when the presence of an en dash is correct
+  - '\s[-—]\s'

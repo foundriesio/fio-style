@@ -1,0 +1,12 @@
+# Rule for en dash: –
+# The en dash is used to join two numerical values, such as a range or date.
+# hypen ( - ) and em dash ( — ) should not be used.
+
+extends: existence
+message: "Use an en dash for numerical ranges and dates"
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Dashes-and-Hyphens
+nonword: true
+level: error
+tokens:
+  - '\b\d+\s?[-]\s?\d+\b'
+  - '\b\d+\s[–]\s\d+\b'
