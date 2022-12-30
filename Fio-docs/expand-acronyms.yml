@@ -1,0 +1,72 @@
+#MIT License
+
+#Copyright (c) 2022 - Present Joseph Kato
+
+#Permission is hereby granted, free of charge, to any person obtaining a copy
+#of this software and associated documentation files (the "Software"), to deal
+#in the Software without restriction, including without limitation the rights
+#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#copies of the Software, and to permit persons to whom the Software is
+#furnished to do so, subject to the following conditions:
+
+#The above copyright notice and this permission notice shall be included in all
+#copies or substantial portions of the Software.
+
+#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+#SOFTWARE.
+
+# Code based off of example: https://vale.sh/docs/topics/styles/#conditional
+
+extends: conditional
+message: "'%s' has no definition, definition is missing capitalization, or is a variable name and should be written as a literal."
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Abbreviations
+level: error
+scope: summary
+ignorecase: false
+# Ensures that the existence of 'first' implies the existence of 'second'.
+first: '\b([A-Z]{3,5})\b'
+second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
+
+exceptions:
+# This is not exhaustive, but covers some of the most common.
+# Some are left off as they are used as varable names, and should still be flagged.
+# Remember we tend to be familiar with many of those left off.
+# The audience is assumed to be at least passingly familiar with the Yocto Project,
+# and as such, embedded development.
+# This rule was tested against the docs for v89 to help identify exceptions.
+
+  - AMD
+  - ARM
+  - BSP
+  - CI
+  - CI/CD
+  - CLI
+  - DNS
+  - EULA
+  - FPGA
+  - GUI
+  - HDMI
+  - HTTP
+  - HTTPS
+  - JTAG
+  - KMS
+  - NGINX
+  - NXP
+  - OTA
+  - QEMU
+  - RAM
+  - REST
+  - ROM
+  - SDK
+  - SSH
+  - SSL
+  - UART
+  - UI
+  - USB
+  - VPN
+  - YAML
