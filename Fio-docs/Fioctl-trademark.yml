@@ -1,0 +1,8 @@
+# Trademark use for Fioctl
+extends: conditional
+message: "'%s' should be marked as a trademark first time it occurs in body of text."
+level: error
+scope: sentence
+ignorecase: false
+first: 'Fioctl'
+second: '(Fioctl)(?:™|\(TM\))'
