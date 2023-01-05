@@ -1,0 +1,10 @@
+# Trademark use Arm
+extends: conditional
+message: "'%s' should be marked as a trademark first time it occurs in body of text."
+# While case sensitive "Arm" is unlikely to cause a false positive, not impossible, so setting level
+# as warning rather than error
+level: warning
+scope: sentence
+ignorecase: false
+first: 'Arm'
+second: '(Arm)(?:®|\(R\))'
