@@ -1,0 +1,6 @@
+extends: occurrence
+message: "Aim for sentences no longer than 25 words"
+scope: sentence
+level: suggestion
+max: 25
+token: \b(\w+)\b
