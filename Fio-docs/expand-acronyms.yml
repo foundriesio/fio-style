@@ -41,6 +41,7 @@ exceptions:
 # This rule was tested against the docs for v89 to help identify exceptions.
 
   - AMD
+  - API
   - ARM
   - BSP
   - CI
