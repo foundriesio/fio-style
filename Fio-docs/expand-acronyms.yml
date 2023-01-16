@@ -44,11 +44,13 @@ exceptions:
   - API
   - ARM
   - BSP
+  - CD
   - CI
   - CI/CD
   - CLI
   - DNS
   - EULA
+  - EVK
   - FPGA
   - GUI
   - HDMI
@@ -59,15 +61,18 @@ exceptions:
   - NGINX
   - NXP
   - OTA
+  - PIN
   - QEMU
   - RAM
   - REST
+  - RISC
   - ROM
   - SDK
   - SSH
   - SSL
   - UART
   - UI
+  - UX
   - USB
   - VPN
   - YAML
