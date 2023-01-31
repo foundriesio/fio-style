@@ -43,6 +43,7 @@ exceptions:
   - AMD
   - API
   - ARM
+  - AWS
   - BSP
   - CD
   - CI
@@ -70,6 +71,7 @@ exceptions:
   - SDK
   - SSH
   - SSL
+  - TLS
   - UART
   - UI
   - UX
