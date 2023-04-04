@@ -5,4 +5,4 @@ level: error
 scope: sentence
 ignorecase: false
 first: 'Fioctl'
-second: '(Fioctl)(?:™|\(TM\))'
+second: '(Fioctl)(?:®|\(R\))'
