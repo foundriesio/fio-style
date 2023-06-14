@@ -14,4 +14,4 @@ tokens:
   - '\b[-–—]\s'
   - '\s[-–—]\b'
 # excluding en dash, as this may occur when the presence of an en dash is correct
-  - '\s[-—]\s'
+  - '\s[-–]\s'
