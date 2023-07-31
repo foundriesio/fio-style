@@ -1,7 +1,12 @@
 extends: existence
-message: Do not use "click here"
+message: Do not use "click here" type links
 level: error
 ignorecase: true
-scope: link
-tokens:
-  - here  
+scope: raw
+raw:
+  - '\[click here\]'
+  - '\[see here\]'
+  - '\[read here\]'
+  - '\[available here\]'
+    
+
