@@ -1,9 +1,9 @@
 # Foundries.io Style Guide
 
-This repository contains an implementation of the Foundries.io style guide.
-It is compatible with the [Vale](https://github.com/errata-ai/vale)([LICENSE](https://github.com/errata-ai/vale/blob/v2/LICENSE)) linter.
+This repository contains an implementation of the FoundriesFactory® style guide.
+Use this with the [Vale](https://github.com/errata-ai/vale)([LICENSE](https://github.com/errata-ai/vale/blob/v2/LICENSE)) linter.
 
-Installing from releases will also pull in additional style guides:
+Installing from releases will also pull in the styles:
 
 * [write-good](https://github.com/errata-ai/write-good); general good practices for writing in English
 * [alex](https://github.com/errata-ai/alex); checks for insensitive or inappropriate language
@@ -17,7 +17,7 @@ Rules go into a folder placed within the directory pointed to by `StylesPath`:
 
 `Styles/Fio-docs/<rule_name>.yml`
 
-`StylePath`, styles to use, and other options are set in a configuration file.
+`StylePath`, styles to use, and other options go into the configuration file.
 This can be `_vale.ini` or `.vale.ini`, and Vale will look first in the current
 directory, and then in the users home directory.
 
@@ -25,4 +25,5 @@ directory, and then in the users home directory.
 * [Installing Vale](https://vale.sh/docs/vale-cli/installation/)
 * [Setting up and Configuring Vale](https://vale.sh/docs/vale-cli/structure/)
 
-Vale can be integrated with most editors.
+Vale has [integrations](https://vale.sh/docs/integrations/guide/) with common editors/IDEs.
+

@@ -3,10 +3,9 @@ message: Do not use "click here" type links
 level: error
 ignorecase: true
 scope: raw
-raw:
-  - '\[click here\]'
-  - '\[see here\]'
-  - '\[read here\]'
-  - '\[available here\]'
+tokens:
+  - click here
+  - read here
+  - available here
     
 

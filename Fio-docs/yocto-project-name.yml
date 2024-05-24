@@ -1,0 +1,8 @@
+extends: conditional
+message: "Use full name: Yocto Project"
+level: warning
+scope: text
+ignorecase: false
+first: 'Yocto'
+second: '(Yocto)+ (Project)'
+

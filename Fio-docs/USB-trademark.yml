@@ -1,8 +1,8 @@
-# Trademark use NXP
+# Trademark use for USB
 extends: conditional
 message: "'%s' should be marked as a registered trademark first time it occurs in body of text."
 level: suggestion
 scope: sentence
 ignorecase: false
-first: 'NXP'
-second: '(NXP)(?:®|\(R\))'
+first: 'USB TYPE-C'
+second: '(USB TYPE-C)(?:®|\(R\))'
