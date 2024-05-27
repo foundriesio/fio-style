@@ -26,7 +26,7 @@ extends: conditional
 message: "'%s' has no definition, definition is missing capitalization, or is a variable name and should be written as a literal."
 link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Abbreviations
 level: error
-scope: summary
+scope: text
 ignorecase: false
 # Ensures that the existence of 'first' implies the existence of 'second'.
 first: '\b([A-Z]{3,5})\b'
@@ -78,3 +78,4 @@ exceptions:
   - USB
   - VPN
   - YAML
+  - TYPE

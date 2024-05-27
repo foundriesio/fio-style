@@ -2,7 +2,7 @@
 extends: substitution
 message: Use '%s' instead of '%s'
 link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Names-and-Branding
-level: error
+level: suggestion
 ignorecase: false
 # The array is 'observed: expected' pairs
 swap:
@@ -25,6 +25,7 @@ swap:
   '(?i:docker hub|docker-hub)': Docker Hub
   '(?i:foundriesfactory|foundries factory)': FoundriesFactory
   '(?i:docker container|docker-container)': Docker container
+  '(?i:uboot|u-boot)': U-Boot
   # If working properly, inline literals and code blocks should be excluded.
   fioctl: Fioctl
   arduino: Arduino
