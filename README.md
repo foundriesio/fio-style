@@ -1,6 +1,6 @@
 # Foundries.io Style Guide
 
-This repository contains an implementation of the FoundriesFactory® style guide.
+This repository contains an implementation of the FoundriesFactory™ Platform style guide.
 Use this with the [Vale](https://github.com/errata-ai/vale)([LICENSE](https://github.com/errata-ai/vale/blob/v2/LICENSE)) linter.
 
 Installing from releases will also pull in the styles:

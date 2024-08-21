@@ -1,8 +1,8 @@
 # Trademark use for FoundriesFactory
 extends: conditional
-message: "'%s' should be marked as a registered trademark first time it occurs in body of text and used as an adjective."
+message: "'%s' should be marked as an unregistered trademark first time it occurs in body of text and used as an adjective."
 level: warning
 scope: sentence
 ignorecase: false
 first: 'FoundriesFactory'
-second: '(FoundriesFactory)(?:®|\(R\))'
+second: '(FoundriesFactory)(?:™|\(TM\))'
