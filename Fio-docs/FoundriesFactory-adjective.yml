@@ -1,0 +1,8 @@
+extends: conditional
+message: "When used with trademark, FoundriesFactory must be an adjective, followed by Platform, Saas, Service, Software, or Solution"
+level: warning
+scope: text
+ignorecase: false
+first: 'FoundriesFactory™'
+second: '(FoundriesFactory™)+ ((Platform)|(SaaS)|(Service)|(Software)|(Solution))' 
+
