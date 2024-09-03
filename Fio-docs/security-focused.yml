@@ -1,0 +1,11 @@
+# Calling things "Secure" can be tricky, and definitive/absolute statements on security should be avoided.
+extends: substitution
+message: Consider '%s' instead of '%s'
+link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Statements-on-Security
+level: suggestion
+ignorecase: true
+# The array is 'observed: expected' pairs
+swap:
+  secured software: security focused software
+  secure update: security focused update
+  securing: protecting
