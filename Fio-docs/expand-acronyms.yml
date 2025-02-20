@@ -57,6 +57,7 @@ exceptions:
   - HDMI
   - HTTP
   - HTTPS
+  - JSON
   - JTAG
   - KMS
   - NGINX
