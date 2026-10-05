@@ -32,6 +32,7 @@ journald
 Json
 Kirkstone
 LmP
+LAN
 (?i)Makefile
 mfgtool
 mmc
@@ -51,6 +52,7 @@ postmerge
 preload
 PyPI
 QEMU
+QLI
 repo
 rootfs
 shellhttpd
